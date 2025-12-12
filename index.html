@@ -925,6 +925,39 @@
             box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
         }
 
+        .spotify-embed {
+            margin: 2rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+            background: var(--glass-bg);
+            padding: 1rem;
+            backdrop-filter: blur(20px);
+            border: 2px solid var(--glass-border);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+        }
+
+        .spotify-embed iframe {
+            border-radius: 12px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .playlist-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .playlist-header h3 {
+            color: var(--neon-pink);
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+        }
+
+        .playlist-header p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
         .song-list {
             list-style: none;
         }
@@ -1520,6 +1553,41 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Music Playlist Section -->
+    <section id="music" class="music">
+        <h2 class="section-title">🎵 Our Playlist 🎵</h2>
+        
+        <div class="playlist">
+            <div class="playlist-header">
+                <h3>Songs that Make Every Moment Special</h3>
+                <p>Listen to our curated playlist of love and celebration 💫</p>
+            </div>
+
+            <!-- Spotify Embed - REPLACE WITH YOUR PLAYLIST URL -->
+            <div class="spotify-embed">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/YOUR_PLAYLIST_ID?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <!-- Manual Song List (Optional) -->
+            <ul class="song-list">
+                <li class="song-item">
+                    <span class="play-icon">▶️</span>
+                    <div class="song-info">
+                        <div class="song-title">Song Name Here</div>
+                        <div class="song-artist">Artist Name</div>
+                    </div>
+                </li>
+                <li class="song-item">
+                    <span class="play-icon">▶️</span>
+                    <div class="song-info">
+                        <div class="song-title">Another Favorite Song</div>
+                        <div class="song-artist">Artist Name</div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 
